@@ -1,0 +1,158 @@
+ /*Estilos por Defecto*/
+
+ *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*loginContent*/
+ 
+.loginContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: #ccc;
+}
+
+.formularioLogin{
+    width: 400px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    box-shadow: -13px 10px 2px #556B2F;
+}
+
+.formulario{
+    width: 400px;
+    height: 90%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 200px;
+}
+
+.formDos{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    box-shadow: -13px 10px 2px #556B2F;
+}
+
+.link{
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.campos{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+.campos input{
+    width: 80%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    box-shadow: -5px 5px 5px #ccc;
+    outline: none;
+}
+
+.logo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    width: 40%;
+    font-size: 35px;
+}
+
+.logo img{
+    width: 40%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.enviar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar input{
+    width: 70%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #556B2F;
+    color: white;
+    border-radius: 100px;
+    box-shadow: -5px 5px 5px #ccc;
+    transition: 500ms;
+}
+
+.enviar input:hover{
+    font-size: 20px;
+    background: #8fca28;
+    transition: 500ms;
+}
+
+@media(max-width: 1000px){
+   .loginContent{
+    height: fit-content;
+    padding: 20px;
+    flex-direction: column;
+   }
+
+   .formularioLogin{
+    width: 320px;
+    height: 70vh;
+   }
+
+   .formulario{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0px;
+   }
+
+   .formDos{
+    width: 300px;
+    height: 30%;
+   }
+}
