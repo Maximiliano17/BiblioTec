@@ -1,20 +1,21 @@
 //Estilos
 import styles from "../modules/Header.module.css"
-
+//React
+import { Link } from "react-router-dom"
 function Nav() {
     return (
       <>
-      {/*Header*/}
+      {/*Header*/} 
        <nav className={styles.nav}>
-            <a href="#">Inicio</a>
-            <a href="#">Libros</a>
-            <a href="#">Nuestro Personal</a>
-            <a href="#">Eventos</a>
-            <a href="#">Cooperadora</a>
+            <Link className={styles.link} to="/">Inicio</Link>
+            <Link className={styles.link} to="/libros">Libros</Link>
+            {/* <Link className={styles.link} to="/personal">Nuestro Personal</Link> */}
+            <a href="#">Stock</a>
+            <a href="#">Pedidos</a>
             <a href="#">Perfil</a>
        </nav> 
       </>
-    )
+    ) 
   } 
   
   export default Nav

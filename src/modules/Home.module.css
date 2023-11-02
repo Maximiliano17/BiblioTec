@@ -14,4 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/banners/biblioteca.jpg');  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
 }

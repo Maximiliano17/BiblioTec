@@ -74,7 +74,7 @@
     transition: 500ms;
 }
 
-/*Burger*/
+/*Burger*/ 
 
 .burger{
     width: 10%;
@@ -82,4 +82,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 1000px){
+    .nav{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
 }

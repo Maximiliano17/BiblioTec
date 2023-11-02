@@ -1,0 +1,74 @@
+/*Estilos por Defecto*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*LibrosContent*/
+
+.librosContent{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.buscador{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.buscador input{
+    width: 500px;
+    height: 2.5rem;
+    outline: none;
+}
+ 
+.librosStock{
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 220px 220px 220px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    overflow-y: scroll;
+    place-items: center;
+    background: #ccc;
+}
+
+.libroItem{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+@media(max-width: 720px){
+
+    .librosStock{
+        grid-template-columns: repeat(1,320px);
+    }
+ 
+     .buscador input{
+        width: 300px;
+     } 
+
+     .libroItem{
+      width: 300px;
+     }
+}

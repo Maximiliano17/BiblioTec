@@ -1,7 +1,9 @@
 //Components
 import Header from "../components/Header"
 //Styles
-import styles from "../modules/Home.module.css"
+import styles from "../modules/Inicio.module.css"
+//Imagenes
+//import banner from "../assets/banners/biblioteca.jpg"
 
 function Inicio() {
     return (
@@ -9,7 +11,7 @@ function Inicio() {
       {/*Inicio*/}
        <Header />
        <div className={styles.inicio}>
-        Hola
+        
        </div>
       </>
     )
