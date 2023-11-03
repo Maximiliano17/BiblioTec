@@ -7,6 +7,7 @@ import App from './App.jsx';
 import Login from "./pages/Login.jsx";
 import Libros from "./pages/Libros.jsx";
 import NuestroPersonal from "./pages/NuestroPersonal.jsx";
+import Stock from "./pages/Stock.jsx";
 // Routes
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
     path: "/personal",
     element: ( 
         <NuestroPersonal /> 
+    ), 
+  },
+  {
+    path: "/stock",
+    element: (  
+        <Stock /> 
     ), 
   },
   {  /*Login - Register*/

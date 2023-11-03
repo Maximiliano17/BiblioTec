@@ -8,7 +8,7 @@ function NuestroPersonal() {
       {/*NuestroPersonal*/}
        <Header />
        <div className={styles.nuestroPersonal}>
-        
+          
        </div>
       </>
     )

@@ -1,0 +1,80 @@
+/*Estilos por Defecto*/
+
+ *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*Stock*/
+
+.stockContent{
+   width: 100%;
+   height: calc(100vh - 10vh);
+   display: grid;
+   grid-template-columns: repeat(4, 300px);
+   grid-template-rows: 500px 500px 500px;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+   overflow-y: scroll;
+   place-items: center;
+   background: #ccc;
+}
+
+.stockItem{
+    width: 250px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 0px 3px #556B2F; 
+}
+
+.nombreHerramienta{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.nombreHerramienta h1{
+    color: white;
+}
+
+.estadisticasHerramienta{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 1rem;
+    background: white;
+}
+ 
+/*Responcive desing*/
+
+@media(max-width: 1300px){
+    .stockContent{
+        grid-template-columns: repeat(3, 300px);
+    }   
+}
+
+@media(max-width: 1000px){
+    .stockContent{
+        grid-template-columns: repeat(1, 320px);
+    }   
+
+    .stockItem{
+        width: 300px;
+    }
+} 

@@ -9,8 +9,7 @@ function Nav() {
        <nav className={styles.nav}>
             <Link className={styles.link} to="/">Inicio</Link>
             <Link className={styles.link} to="/libros">Libros</Link>
-            {/* <Link className={styles.link} to="/personal">Nuestro Personal</Link> */}
-            <a href="#">Stock</a>
+            <Link className={styles.link} to="/stock">Stock</Link>
             <a href="#">Pedidos</a>
             <a href="#">Perfil</a>
        </nav> 
