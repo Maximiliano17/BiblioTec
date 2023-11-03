@@ -12,14 +12,14 @@ function Stock() {
         <section className={styles.stockItem}>
           <div className={styles.nombreHerramienta}>
            <h1>El Principito</h1>
-          </div>
+          </div> 
           <div className={styles.estadisticasHerramienta}>
-           <p>Stock</p>
-           <p>Stock Numero</p>
+           <p>Libros en pedidos</p>
+           <p>5</p>
            <p>Stock Utilizable</p>
-           <p>Stock Numero</p>
-           <p>Stock En Uso</p>
-           <p>Stock Numero</p>
+           <p>30</p>
+           <p>Stock Total</p>
+           <p>35</p>
           </div>
         </section>
         <section className={styles.stockItem}>

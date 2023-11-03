@@ -20,8 +20,99 @@
 
 .info{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 10rem);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.info img{
+    width: 40%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.infoText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infoText h1{
+    width: 80%;
+    color: blue;
+}
+
+.infoText p{
+    width: 80%;
+    height: fit-content;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.formularios{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario{
+    width: 400px;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px green;
+}
+
+.formulario input{
+    width: 80%;
+    height: 2rem;
+    outline: none;
+}
+
+@media(max-width: 1000px){
+
+    .info{
+        height: fit-content;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .info img{
+        height: 500px;
+    }
+
+    .infoText{
+        width: 100%;
+        height: 300px;
+    }
+
+    .formularios{
+        height: fit-content;
+        padding: 20px;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .formulario{
+        width: 320px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+    }
 }

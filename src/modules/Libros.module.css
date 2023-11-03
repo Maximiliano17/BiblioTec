@@ -34,11 +34,30 @@
     outline: none;
 }
  
-.librosStock{
+.buscador button{
+    width: 150px;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    color: white;
+    background: green;
+}
+
+.seccionBaja{
     width: 100%;
     height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.librosStock{
+    width: 70%;
+    height: calc(100vh - 10vh);
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 400px);
     grid-template-rows: 220px 220px 220px;
     padding: 20px;
     justify-content: center;
@@ -55,6 +74,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+}
+
+.form{
+    width: 30%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form select{
+    width: 80%;
+    height: 2rem;
+    outline: none;
+} 
+
+.form input{
+    width: 80%;
+    height: 2rem;
+    outline: none;
+}
+
+.libros{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px #ccc;
     background: white;
 }
 
