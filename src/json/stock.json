@@ -1,4 +1,57 @@
 {
-    "titulo":"El Principito",
-    "descripccion": "Un libro re fachero loco un libraso"
+    "ejemplo_de_libro":{
+        "title": "El principito",
+        "autor": "Alguno",
+        "estante": "Algun estante",
+        "description": "Descripcion de libro....",
+        "asignatura": "Autos",
+        "ejemplares": "2",
+        "editorial": "ehh nose",
+        "fechaIngreso":"2023-11-02T03:43:46Z" ,
+        "fechaCreacion":"2023-11-02T03:43:46Z",
+        "paginas": 33,
+        "porqueIngreso": "permuta",
+        "estado": "viejo",
+        "tejuelo": {
+          "dewi": "ewrdgdfg",
+          "tresPrimerasLetrasAutor": "ABC",
+          "catalogacion": "posnose"
+        },
+        "stock": 30,
+        "pedidos": 6
+    },
+    "todos_los_campos_de_un_libro":{
+        "title": "String",
+        "autor": "String",
+        "estante": "String",
+        "description": "String",
+        "asignatura": "String",
+        "ejemplares": "String",
+        "editorial": "String",
+        "fechaIngreso": "Date",
+        "fechaCreacion": {
+          "type": "Date",
+          "default": "Date.now"
+        },
+        "paginas": "Number",
+        "porqueIngreso": {
+        "type":"String",
+          "enum": ["can", "permuta", "com"]
+        },
+        "estado": "String",
+        "tejuelo": {
+          "dewi": "String",
+          "tresPrimerasLetrasAutor": "String",
+          "catalogacion": "String"
+        },
+        "stock": "Number",
+        "pedidos": {
+          "type": "Number",
+          "default": 0
+        },
+        "disponible": {
+          "type": "Number",
+          "default": "function(){ return this.stock - this.pedidos;}"
+        }
+    }
 }

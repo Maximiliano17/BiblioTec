@@ -1,63 +1,31 @@
 //Components
+import { useState } from "react"
 import Header from "../components/Header"
+import StockItem from "../components/StockItem"
 //Styles
 import styles from "../modules/Stock.module.css"
+import { getLibros } from "../utils/manejarLibros";
 
 function Stock() {
-    return (
-      <>
-      {/*Stock*/} 
-       <Header />
-       <div className={styles.stockContent}>
-        <section className={styles.stockItem}>
-          <div className={styles.nombreHerramienta}>
-           <h1>El Principito</h1>
-          </div> 
-          <div className={styles.estadisticasHerramienta}>
-           <p>Libros en pedidos</p>
-           <p>5</p>
-           <p>Stock Utilizable</p>
-           <p>30</p>
-           <p>Stock Total</p>
-           <p>35</p>
-          </div>
-        </section>
-        <section className={styles.stockItem}>
-          <div className={styles.nombreHerramienta}>
-           
-          </div>
-          <div className={styles.estadisticasHerramienta}>
+  const [libros, setLibros] = useState([]);
+  useState(() => {
+    getLibros(setLibros);
 
-          </div>
-        </section>
-        <section className={styles.stockItem}>
-          <div className={styles.nombreHerramienta}>
-           
-          </div>
-          <div className={styles.estadisticasHerramienta}>
+  }, []);
+  return (
+    <>
+      {/*Stock*/}
+      <Header />
+      <div className={styles.stockContent}>
+        {
+          libros.length > 0 ?
+            libros.map(libro => <StockItem key={libro._id} libro={libro}/>)
+            :
+            <div>No hay libros aun</div>
+        }
+      </div>
+    </>
+  )
+}
 
-          </div>
-        </section>
-        <section className={styles.stockItem}>
-          <div className={styles.nombreHerramienta}>
-           
-          </div>
-          <div className={styles.estadisticasHerramienta}>
-
-          </div>
-        </section>
-        <section className={styles.stockItem}>
-          <div className={styles.nombreHerramienta}>
-           
-          </div>
-          <div className={styles.estadisticasHerramienta}>
-
-          </div>
-        </section>
-       </div>
-      </>
-    )
-  } 
-  
-  export default Stock
-  
+export default Stock
