@@ -10,7 +10,7 @@ function Nav() {
             <Link className={styles.link} to="/">Inicio</Link>
             <Link className={styles.link} to="/libros">Libros</Link>
             <Link className={styles.link} to="/stock">Stock</Link>
-            <a href="#">Pedidos</a>
+            <Link className={styles.link} to="/pedidos">Pedidos</Link>
             <a href="#">Perfil</a>
        </nav> 
       </>

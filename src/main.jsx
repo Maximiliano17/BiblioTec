@@ -8,6 +8,7 @@ import Login from "./pages/Login.jsx";
 import Libros from "./pages/Libros.jsx";
 import NuestroPersonal from "./pages/NuestroPersonal.jsx";
 import Stock from "./pages/Stock.jsx";
+import Pedidos from "./pages/Pedidos.jsx";
 // Routes
 const router = createBrowserRouter([
   {
@@ -26,6 +27,12 @@ const router = createBrowserRouter([
     path: "/personal",
     element: ( 
         <NuestroPersonal /> 
+    ), 
+  },
+  {
+    path: "/pedidos",
+    element: ( 
+        <Pedidos /> 
     ), 
   },
   {

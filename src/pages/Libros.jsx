@@ -15,14 +15,45 @@ function libros() {
        <div className={styles.seccionBaja}>
          <form className={styles.form}>
           {/* <label>Biblioteca App</label> */}
-          <select>
-            <option>Profesor</option>
-            <option>Alumno</option>
-          </select>
-          <input type="text" name="" id="" placeholder=" Nombre del Estudiante" />
-           <input type="text" name="" id="" placeholder=" " />
-           <input type="text" name="" id="" />
-           <input type="text" name="" id="" />
+
+          <input type="text" placeholder="Nombre Completo" />
+
+           <select name="especialidad_op">
+              <option>- -</option>
+              <option>Profesor</option>
+              <option>Alumno</option>
+            </select>
+
+             <select name="especialidad_op">
+              <option>- -</option>
+              <option>Informatica</option>
+              <option>Turismo</option>
+              <option>Alimentos</option>
+              <option>Ciclo Basico</option>
+            </select>
+              
+             <select name="year_op">
+              <option>- -</option>
+              <option>1 ro</option>
+              <option>2 do</option>
+              <option>3 ro</option>
+              <option>4 to</option>
+              <option>5 to</option>
+              <option>6 to</option>
+              <option>7 mo</option>
+             </select>
+         
+            <select name="year_div_op">
+              <option>- -</option>
+              <option>Primera</option>
+              <option>Segunda</option>
+              <option>Tercera</option>
+              <option>Cuarta</option>
+              <option>Quinta</option>
+              <option>Sexta</option>
+              <option>Septima</option>
+            </select>
+          
            {/*Button*/}
            <input type="button" value="Realizar Pedido" />
            {/* Libros */}
