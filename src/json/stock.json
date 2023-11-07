@@ -1,5 +1,6 @@
 {
     "ejemplo_de_libro":{
+        "img": "bobesponja.jpg",
         "title": "El principito",
         "autor": "Alguno",
         "estante": "Algun estante",
