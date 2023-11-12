@@ -58,19 +58,19 @@
     height: calc(100vh - 10vh);
     display: grid;
     grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 220px 220px 220px;
+    grid-template-rows: 250px 250px 250px;
     padding: 20px;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
     overflow-y: scroll;
     place-items: center;
-    background: #ccc;
+    background: green;
 }
 
 .libroItem{
     width: 400px;
-    height: 200px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,16 +110,66 @@
     background: white;
 }
 
-.tejuelo{
+.tejueloContent{
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
 }
 
+.tejueloContent button{
+    width: 80%;
+    height: 2rem;
+    background: none;
+    border-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.tejuelo{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 10px;
+    background: white;
+    color: grey;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+}
+
+.delete:hover{
+    color: red;
+    transition: 500ms;
+}
+
+.icon:hover{
+   color: rgb(22, 240, 22);
+   transition: 500ms;
+}
+
+.frontal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
 
 @media(max-width: 720px){
 
