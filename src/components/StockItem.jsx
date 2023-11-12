@@ -1,5 +1,7 @@
+//Styles
 import styles from "../modules/Stock.module.css"
-export default function StockItem({libro}){
+
+function StockItem({libro}){
     return(
         <section className={styles.stockItem}>
           <div className={styles.nombreHerramienta}>
@@ -13,6 +15,8 @@ export default function StockItem({libro}){
            <p>Stock Total</p>
            <p>{libro.stock}</p>
           </div>
-        </section>
+        </section>  
     );
 }
+
+export default StockItem

@@ -110,6 +110,17 @@
     background: white;
 }
 
+.tejuelo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+
 @media(max-width: 720px){
 
     .librosStock{
