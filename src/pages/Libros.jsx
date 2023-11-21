@@ -1,17 +1,13 @@
-import { useState, useEffect } from "react"; 
 import Header from "../components/Header";
 import LibroItem from "../components/LibroItem";
 import styles from "../modules/Libros.module.css";
-import { getLibros } from "../utils/manejarLibros";
-import { crearPedido } from "../utils/manejarPedidos";
+import { useLibrosContext } from "../context/libroContexts";
+import { useState } from "react";
 
 function Libros() {
-  const [libros, setLibros] = useState([]);
-//   const [librosSeleccionados, setLibrosSeleccionados] = useState([]);
+  const {libros, crearPedido} = useLibrosContext();
+  const [librosSeleccionados, setLibrosSeleccionados] = useState([]);
 
-  useEffect(() => {
-    getLibros(setLibros);
-  }, []);
 
 //   const seleccionarLibros = (libroId) => {
 //     setLibrosSeleccionados((prevLibrosSeleccionados) => [
@@ -35,7 +31,7 @@ function Libros() {
           >
             <label>Biblioteca App</label>
 
-            <label htmlFor="solicitante">Solicitante</label>
+            <label htmlFor="profesor">Solicitante</label>
             <input
               type="text"
               name="profesor"

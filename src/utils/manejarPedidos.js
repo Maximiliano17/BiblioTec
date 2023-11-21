@@ -11,10 +11,11 @@ export const crearPedido = async (e, librosSeleccionados) => {
         divicion: formulario.divicion.value,
         librosSeleccionados: ['uni','mate']//reemplazar aqui por librosSeleccionados
     };
-    const enviar = JSON.stringify(pedido)
+    const enviar = JSON.stringify(pedido);
     crearPedidoRequest(enviar);
     // e.target.submit();
 }
+
 export const obtenerPedidos = async (setPedidos)=>{
     const {data} = await getPedidosRequest();
     setPedidos(data);
@@ -22,7 +23,6 @@ export const obtenerPedidos = async (setPedidos)=>{
 
 export const borrarPedido = async (id, setPedidos, pedidos)=>{
     const filtrado = pedidos.filter(pedido => pedido._id !== id);
-    console.log(filtrado)
     setPedidos(filtrado);
     borrarPedidoRequest(id);
 }

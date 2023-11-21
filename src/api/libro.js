@@ -8,4 +8,4 @@ export const crearLibroRequest = (libro)=> axios.post(`/libros`, libro);
 //actualizar un libro
 export const updateLibroRequest = (id, libro)=> axios.put(`/libros/${id}`,libro);
 //borrar un libro
-export const deleteLibroRequest = (id)=> axios.delete(`/libros/${id}`);
+export const deleteLibroRequest = (id)=> axios.post(`/libros/${id}`);
