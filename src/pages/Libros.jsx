@@ -5,7 +5,10 @@ import { useLibrosContext } from "../context/libroContexts";
 import { useState } from "react";
 
 function Libros() {
-  const {libros, crearPedido} = useLibrosContext();
+  const {
+    libros, crearPedido, getLibros,
+    setPedidos
+  } = useLibrosContext();
   const [librosSeleccionados, setLibrosSeleccionados] = useState([]);
 
 
@@ -27,7 +30,7 @@ function Libros() {
         <div className={styles.seccionBaja}>
           <form
             className={styles.form}
-            onSubmit={(evento) => crearPedido(evento, librosSeleccionados)}
+            onSubmit={(evento) => crearPedido(evento, librosSeleccionados, getLibros, setPedidos)}
           >
             <label>Biblioteca App</label>
 

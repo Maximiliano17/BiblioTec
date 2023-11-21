@@ -1,6 +1,6 @@
 import { borrarPedidoRequest, crearPedidoRequest, getPedidosRequest } from "../api/pedido";
 
-export const crearPedido = async (e, librosSeleccionados) => {
+export const crearPedido = async (e, librosSeleccionados, getLibros, setPedidos) => {
     e.preventDefault();
     const formulario = e.target;
     const pedido = {
@@ -12,7 +12,8 @@ export const crearPedido = async (e, librosSeleccionados) => {
         librosSeleccionados: ['uni','mate']//reemplazar aqui por librosSeleccionados
     };
     const enviar = JSON.stringify(pedido);
-    crearPedidoRequest(enviar);
+    const res = crearPedidoRequest(enviar);
+    if(res.status == 200) getLibros(setPedidos);
     // e.target.submit();
 }
 
